@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Propuesta de redes sociales para Weston Dental Design</title>
+<meta name="description" content="Una muestra de cómo podrían verse las redes sociales de Weston Dental Design, preparada para el Dr. Javier Bonilla.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#205D99">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23205D99'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='white'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#205D99; --blue-d:#174A7C; --navy:#0C2A47; --navy-2:#081E34;
+  --sage:#82AF9A; --sage-d:#3F7A64; --sage-l:#E6F0EB; --mist:#F3F8F5; --paper:#fff;
+  --ink:#10263D; --ink-2:#3B5066; --ink-3:#566B7F;
+  --line:rgba(16,38,61,.12); --line-d:rgba(255,255,255,.16);
+  --ease:cubic-bezier(.23,1,.32,1);
+  --gutter:clamp(16px,4vw,48px);
+  --r:20px;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --sans:"Nunito Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:17px;color:var(--ink);background:var(--paper);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.03em;line-height:1.05;text-wrap:balance}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+.dark :focus-visible{outline-color:var(--sage)}
+.wrap{width:min(1240px,100% - var(--gutter)*2);margin-inline:auto}
+
+/* nav */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:80px}
+.brand img{height:60px;width:auto;object-fit:contain}
+.steps{display:flex;gap:4px}
+.steps a{font-size:15px;font-weight:700;text-decoration:none;color:var(--ink-2);padding:10px 16px;border-radius:99px;transition:background .2s var(--ease),color .2s var(--ease)}
+.steps a b{color:var(--sage-d);margin-right:8px;font-weight:800}
+.steps a.on{background:var(--sage-l);color:var(--blue-d)}
+@media (hover:hover) and (pointer:fine){.steps a:hover{background:var(--sage-l);color:var(--blue-d)}}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:clamp(52px,8vw,100px) 0 clamp(48px,7vw,88px);background:linear-gradient(135deg,var(--navy-2) 0%,var(--navy) 42%,var(--blue-d) 100%);overflow:hidden;isolation:isolate}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(70px);z-index:-1;will-change:transform}
+.hero .b1{width:520px;height:520px;background:var(--sage);opacity:.3;left:-160px;top:-120px;animation:drift 20s ease-in-out infinite alternate}
+.hero .b2{width:460px;height:460px;background:var(--blue);opacity:.7;right:-120px;bottom:-140px;animation:drift 24s ease-in-out infinite alternate-reverse}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(40px,30px,0) scale(1.1)}}
+.hero-grid{display:grid;gap:clamp(32px,5vw,64px);align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.15fr .85fr}}
+.eyebrow{display:inline-block;font-size:14px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sage)}
+.hero h1{font-weight:700;font-size:clamp(40px,6.4vw,84px);margin:20px 0 22px;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--sage)}
+.hero p.lead{font-size:clamp(17px,1.9vw,21px);color:rgba(255,255,255,.86);max-width:50ch}
+.hero .for{margin-top:28px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:17px;color:rgba(255,255,255,.82)}
+.hero .for b{color:#fff;font-weight:800}
+.path{margin-top:38px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px}
+.path a{display:block;text-decoration:none;padding:18px 20px;border:1px solid var(--line-d);border-radius:var(--r);background:rgba(255,255,255,.07);transition:transform .25s var(--ease),border-color .25s,background .25s}
+@media (hover:hover) and (pointer:fine){.path a:hover{transform:translateY(-3px);border-color:rgba(130,175,154,.8);background:rgba(130,175,154,.18)}}
+.path a:active{transform:scale(.98)}
+.path small{display:block;font-size:14px;letter-spacing:.14em;color:var(--sage);font-weight:800}
+.path span{display:block;margin-top:4px;font-weight:700;font-size:17px;line-height:1.3}
+.hero-phone{position:relative;max-width:360px;margin-inline:auto;width:100%}
+.hero-phone .ph{border-radius:44px;padding:11px;background:linear-gradient(145deg,#2c4a63,#07131f 60%);box-shadow:0 0 0 1.5px rgba(130,175,154,.4),0 50px 90px -30px rgba(0,0,0,.8);transform:rotate(3deg);transition:transform .5s var(--ease)}
+.hero-phone .scr{border-radius:34px;overflow:hidden;height:min(66vh,560px);background:#fff}
+.hero-phone .scr img{width:100%;height:auto}
+@media(max-width:959px){.hero-phone{max-width:300px}.hero-phone .scr{height:430px}}
+
+/* secciones */
+section.blk{padding:clamp(64px,9vw,120px) 0;position:relative}
+#hoy{background:var(--mist)}
+#propuesta{background:linear-gradient(180deg,var(--navy),var(--navy-2));color:#fff}
+#material{background:var(--sage-l)}
+.sec-head{display:flex;gap:clamp(16px,3vw,36px);align-items:flex-start;margin-bottom:clamp(30px,5vw,56px)}
+.num{font-family:var(--display);font-weight:800;font-size:clamp(56px,8vw,104px);line-height:.85;color:transparent;-webkit-text-stroke:1.5px var(--blue);letter-spacing:-.04em}
+#propuesta .num{-webkit-text-stroke-color:var(--sage)}
+.sec-head h2{font-weight:700;font-size:clamp(32px,4.6vw,54px)}
+.sec-head p{margin-top:12px;color:var(--ink-2);max-width:60ch;font-size:clamp(16px,1.6vw,18px)}
+#propuesta .sec-head p{color:rgba(255,255,255,.8)}
+.kicker{font-size:14px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--sage-d);margin-bottom:10px}
+#propuesta .kicker{color:var(--sage)}
+
+/* HOY */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px}
+.stat{padding:22px;border-radius:var(--r);background:#fff;border:1px solid var(--line);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+@media (hover:hover) and (pointer:fine){.stat:hover{transform:translateY(-4px);box-shadow:0 24px 40px -26px rgba(12,42,71,.5)}}
+.stat b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(34px,4vw,50px);line-height:1;color:var(--blue);letter-spacing:-.03em}
+.stat span{display:block;margin-top:8px;font-size:16px;color:var(--ink-2);line-height:1.4}
+.now{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,22px)}
+.shot{border-radius:var(--r);background:#fff;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;cursor:zoom-in;text-align:left;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+@media (hover:hover) and (pointer:fine){.shot:hover{transform:translateY(-6px);box-shadow:0 30px 50px -28px rgba(12,42,71,.6)}}
+.shot:active{transform:scale(.99)}
+.shot .win{aspect-ratio:4/5;overflow:hidden;background:#fff;border-bottom:1px solid var(--line)}
+.shot .win img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.shot figcaption{padding:16px 18px 18px;display:grid;gap:4px}
+.shot figcaption b{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-d);font-weight:800}
+.shot figcaption span{font-size:17px;font-weight:700;line-height:1.35;color:var(--ink)}
+.shot figcaption small{font-size:15.5px;color:var(--ink-2);line-height:1.45}
+.review{margin-top:clamp(14px,2vw,22px);border-radius:var(--r);padding:clamp(24px,3.4vw,40px);background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%);color:#fff;display:grid;gap:22px;align-items:center}
+@media(min-width:860px){.review{grid-template-columns:auto 1fr;gap:48px}}
+.review .rate b{font-family:var(--display);font-size:clamp(64px,8vw,96px);font-weight:700;line-height:.9;letter-spacing:-.04em}
+.review .stars{color:#F4C95D;font-size:24px;letter-spacing:4px;margin-top:6px}
+.review .meta{font-size:16px;color:rgba(255,255,255,.82);margin-top:4px}
+.review blockquote{font-size:clamp(19px,2.1vw,25px);line-height:1.45;font-weight:700;letter-spacing:-.005em}
+.review cite{display:block;margin-top:14px;font-style:normal;font-size:16px;color:var(--sage);font-weight:700}
+
+/* PROPUESTA */
+.stage{display:grid;grid-template-columns:1fr minmax(320px,520px) 1fr;gap:clamp(20px,4vw,56px);align-items:stretch}
+.phone-col{position:relative;perspective:1400px}
+.phone{position:relative;border-radius:clamp(44px,12vw,60px);padding:clamp(9px,2.6vw,13px);background:linear-gradient(145deg,#32526c,#07131f 60%);box-shadow:0 0 0 1.5px rgba(130,175,154,.5),0 60px 110px -30px rgba(0,0,0,.85),0 0 90px -20px rgba(130,175,154,.5);transition:transform .45s var(--ease);cursor:zoom-in;display:block;width:100%;-webkit-tap-highlight-color:transparent}
+.phone .screen{border-radius:clamp(34px,9.6vw,48px);overflow:hidden;background:#fff;position:relative}
+.phone .screen img{width:100%;height:auto}
+.phone .zoom{position:absolute;right:16px;bottom:16px;z-index:3;font-size:14px;font-weight:700;background:rgba(8,30,52,.9);color:#fff;padding:10px 15px;border-radius:99px;border:1px solid var(--line-d);display:flex;gap:8px;align-items:center}
+.glow{position:absolute;inset:8% 0;background:radial-gradient(closest-side,rgba(130,175,154,.4),transparent);filter:blur(30px);z-index:-1}
+.notes{display:flex;flex-direction:column;justify-content:space-between;gap:22px;padding:6% 0}
+.note{border-left:3px solid var(--sage);padding:2px 0 2px 18px;max-width:320px}
+.notes.r .note{margin-left:auto}
+.note h3{font-size:24px;font-weight:700;margin-bottom:6px}
+.note p{font-size:16.5px;color:rgba(255,255,255,.82);line-height:1.55}
+.posts-head{margin:clamp(60px,8vw,104px) 0 22px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.posts-head h3{font-weight:700;font-size:clamp(28px,3.6vw,42px)}
+.posts-head p{font-size:16px;color:rgba(255,255,255,.8)}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gutter) 24px;margin:0 calc(var(--gutter)*-1);scrollbar-width:thin;scrollbar-color:var(--sage) transparent;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{height:6px}.rail::-webkit-scrollbar-thumb{background:var(--sage);border-radius:9px}
+.post{flex:0 0 clamp(230px,62vw,310px);scroll-snap-align:start;border-radius:18px;overflow:hidden;border:1px solid var(--line-d);background:var(--navy-2);cursor:zoom-in;padding:0;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+@media (hover:hover) and (pointer:fine){.post:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:0 26px 50px -22px rgba(0,0,0,.85),0 0 0 1px rgba(130,175,154,.7)}}
+.post:active{transform:scale(.98)}
+.post img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.fbblock{margin-top:clamp(40px,6vw,72px);display:grid;gap:18px;padding:clamp(24px,3.4vw,40px);border-radius:var(--r);border:1px solid var(--line-d);background:rgba(255,255,255,.06)}
+@media(min-width:860px){.fbblock{grid-template-columns:auto 1fr;gap:48px;align-items:center}}
+.fbblock h3{font-size:clamp(26px,3vw,36px);font-weight:700}
+.fbblock p{color:rgba(255,255,255,.84);max-width:60ch;margin-top:8px}
+.fbblock .n{font-family:var(--display);font-weight:700;font-size:clamp(54px,6vw,76px);line-height:.9;color:var(--sage);letter-spacing:-.04em}
+.fbblock .n small{display:block;font-family:var(--sans);font-size:16px;letter-spacing:0;color:rgba(255,255,255,.82);font-weight:700;margin-top:8px}
+
+/* MATERIAL */
+.mat{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,22px)}
+.mat .span2{grid-column:span 2}
+.mat .ph{display:flex}
+.mat .ph img{height:100%;aspect-ratio:auto}
+.mat .ph.sq{aspect-ratio:1/1}
+.mat .ph.r43{aspect-ratio:4/3}
+.mat .ph.span2:not(.ban){aspect-ratio:2/1}
+.mat .ph.ban{aspect-ratio:517/192;align-self:start}
+@media(max-width:1020px){.mat{grid-template-columns:1fr 1fr}.mat .ph.ban{grid-column:1/-1}.mat .span2{grid-column:1/-1;aspect-ratio:16/9}}
+.ph{margin:0;border-radius:var(--r);overflow:hidden;position:relative;background:#fff;border:1px solid var(--line);cursor:zoom-in;display:block;text-align:left;padding:0;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+@media (hover:hover) and (pointer:fine){.ph:hover{transform:translateY(-5px);box-shadow:0 28px 50px -26px rgba(12,42,71,.6)}}
+.ph:active{transform:scale(.99)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:12px;bottom:12px;font-size:15px;font-weight:700;padding:8px 14px;border-radius:99px;background:rgba(255,255,255,.94);color:var(--ink);box-shadow:0 8px 18px -10px rgba(12,42,71,.6)}
+.mat .sq img{aspect-ratio:1/1}
+.mat .wide{grid-column:1/-1}
+.mat .wide img{aspect-ratio:517/192;object-fit:cover}
+.mat3{margin-top:clamp(14px,2vw,22px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,22px)}
+.mat3 .ph img{aspect-ratio:4/3}
+.src{margin-top:22px;font-size:15.5px;color:var(--ink-2)}
+
+/* CIERRE */
+.close{padding:clamp(64px,9vw,120px) 0 40px;background:linear-gradient(180deg,var(--navy),var(--navy-2));color:#fff}
+.close-card{position:relative;overflow:hidden;border-radius:clamp(24px,4vw,40px);padding:clamp(32px,6vw,80px);border:1px solid rgba(130,175,154,.5);background:radial-gradient(700px 400px at 92% 0%,rgba(130,175,154,.32),transparent 60%),linear-gradient(145deg,var(--blue) 0%,var(--blue-d) 50%,var(--navy) 100%)}
+.close-card h2{font-weight:700;font-size:clamp(34px,5.2vw,62px);max-width:20ch}
+.close-card h2 em{font-style:normal;color:#CFE8DB}
+.close-card p.lead{margin-top:20px;color:rgba(255,255,255,.88);max-width:58ch;font-size:clamp(17px,1.7vw,19px)}
+.svc{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.svc div{padding:22px;border-radius:var(--r);background:rgba(8,30,52,.45);border:1px solid var(--line-d);font-size:16.5px;line-height:1.5;color:rgba(255,255,255,.86);transition:transform .25s var(--ease),border-color .25s}
+@media (hover:hover) and (pointer:fine){.svc div:hover{transform:translateY(-3px);border-color:rgba(130,175,154,.8)}}
+.svc b{display:block;font-size:19px;color:#fff;font-weight:800;margin-bottom:4px}
+.svc svg{width:28px;height:28px;stroke:var(--sage);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.sign{margin-top:38px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px;padding-top:28px;border-top:1px solid var(--line-d)}
+.sign p{font-size:16.5px;color:rgba(255,255,255,.86)}
+.sign b{color:#fff;display:block;font-size:20px;font-weight:800}
+.contact{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.contact a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:99px;border:1.5px solid rgba(255,255,255,.55);background:rgba(255,255,255,.1);font-weight:700;font-size:16px;text-decoration:none;overflow-wrap:anywhere;transition:transform .2s var(--ease),background .2s,color .2s,box-shadow .2s}
+@media (hover:hover) and (pointer:fine){.contact a:hover{transform:translateY(-2px);background:#fff;color:var(--blue-d);box-shadow:0 14px 34px -12px rgba(0,0,0,.5)}}
+.contact a:active{transform:scale(.97)}
+.contact svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+footer{padding:34px 0 52px;color:rgba(255,255,255,.78);font-size:15.5px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+footer a{text-decoration:none}
+
+/* lightbox */
+dialog{border:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:#fff}
+dialog::backdrop{background:rgba(6,16,28,.93);backdrop-filter:blur(6px)}
+dialog .box{height:100%;overflow:auto;display:flex;justify-content:center;padding:68px 12px 28px;-webkit-overflow-scrolling:touch}
+dialog img{width:min(560px,100%);height:auto;border-radius:18px;align-self:flex-start;background:#fff}
+dialog button{position:fixed;top:14px;right:14px;z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid var(--line-d);background:rgba(12,42,71,.96);color:#fff;font-size:26px;transition:transform .16s var(--ease)}
+dialog button:active{transform:scale(.94)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .stage{grid-template-columns:1fr;max-width:560px;margin-inline:auto}
+  .phone-col{order:-1}
+  .notes{padding:0}
+  .notes.r .note{margin-left:0}
+  .note{max-width:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .now{grid-template-columns:repeat(2,1fr)}
+  .svc{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .top .wrap{height:68px}
+  .brand img{height:56px}
+  .steps{display:none}
+  .path{grid-template-columns:1fr}
+  .path a{display:flex;align-items:baseline;gap:14px}
+  .path span{margin:0}
+  .sec-head{flex-direction:column;gap:8px}
+  .now{grid-template-columns:1fr}
+  .stage{max-width:none}
+  .phone-col{margin-inline:-6px}
+  .mat{grid-template-columns:1fr}
+  .mat3{grid-template-columns:1fr}
+  .sign{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Inicio"><img src="img/logo.webp" alt="Logo de Weston Dental Design Group" width="272" height="109"></a>
+    <nav class="steps" aria-label="Recorrido">
+      <a href="#hoy"><b>01</b>Hoy</a>
+      <a href="#propuesta"><b>02</b>Propuesta</a>
+      <a href="#material"><b>03</b>Material</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero dark">
+    <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow rv">Propuesta de redes sociales</div>
+        <h1 class="rv" style="--d:.08s">Sus redes, a la altura de <em>su consultorio.</em></h1>
+        <p class="lead rv" style="--d:.16s">Armamos una muestra de cómo podrían verse las redes de Weston Dental Design, con su logo, los colores de su marca y los datos reales de su consultorio.</p>
+        <div class="for rv" style="--d:.24s">
+          <span>Preparada para <b>Dr. Javier Bonilla</b></span>
+          <span>Weston, FL</span>
+        </div>
+        <div class="path rv" style="--d:.32s">
+          <a href="#hoy"><small>01</small><span>Cómo están hoy</span></a>
+          <a href="#propuesta"><small>02</small><span>Cómo podrían verse</span></a>
+          <a href="#material"><small>03</small><span>Material que ya tenemos</span></a>
+        </div>
+      </div>
+      <div class="hero-phone rv" style="--d:.2s" aria-hidden="true">
+        <div class="ph" id="heroph"><div class="scr"><img src="img/feed.webp" alt="" width="1080" height="2177"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 HOY -->
+  <section class="blk" id="hoy">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="num">01</div>
+        <div>
+          <div class="kicker">Hoy</div>
+          <h2>Un muy buen punto de partida</h2>
+          <p>Sus pacientes lo recomiendan en Google y su perfil ya tiene logo, datos de contacto e historias destacadas. Lo que falta es ritmo.</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat rv"><b data-count="733">733</b><span>seguidores en Instagram</span></div>
+        <div class="stat rv" style="--d:.06s"><b data-count="446">446</b><span>publicaciones en Instagram</span></div>
+        <div class="stat rv" style="--d:.12s"><b data-count="237">237</b><span>seguidores en Facebook</span></div>
+        <div class="stat rv" style="--d:.18s"><b>4,9★</b><span>en Google, con 167 reseñas</span></div>
+      </div>
+
+      <div class="now">
+        <button class="shot rv" type="button" data-zoom="img/hoy-ig-perfil.webp" data-alt="Captura del perfil de Instagram westondentaldesign">
+          <div class="win"><img src="img/hoy-ig-perfil.webp" alt="Captura del perfil de Instagram westondentaldesign: 446 publicaciones, 733 seguidores, 593 seguidos, con historias destacadas Services, Contacts, Reviews y Affordability" width="375" height="600" loading="lazy"></div>
+          <figcaption><b>Instagram · perfil</b><span>446 publicaciones y 733 seguidores</span><small>Teléfono, dirección y sitio web a la vista, con historias destacadas por tema</small></figcaption>
+        </button>
+        <button class="shot rv" style="--d:.08s" type="button" data-zoom="img/hoy-ig-grilla.webp" data-alt="Captura de la grilla de Instagram">
+          <div class="win"><img src="img/hoy-ig-grilla.webp" alt="Captura de la grilla de Instagram con piezas de reseñas, promociones y fotos de sonrisas" width="375" height="600" loading="lazy"></div>
+          <figcaption><b>Instagram · publicaciones</b><span>Última publicación: 1 de abril de 2026</span><small>La anterior es de abril de 2025, y las piezas tienen estilos distintos entre sí</small></figcaption>
+        </button>
+        <button class="shot rv" style="--d:.16s" type="button" data-zoom="img/hoy-fb.webp" data-alt="Captura del perfil de Facebook">
+          <div class="win"><img src="img/hoy-fb.webp" alt="Captura del perfil de Facebook Weston Dental Design Group: 237 seguidores, portada con el logo y el teléfono" width="517" height="547" loading="lazy"></div>
+          <figcaption><b>Facebook · perfil</b><span>237 seguidores</span><small>Portada con su logo y su teléfono, y el botón para reservar</small></figcaption>
+        </button>
+        <button class="shot rv" style="--d:.24s" type="button" data-zoom="img/hoy-fb-post.webp" data-alt="Captura de la última publicación de Facebook">
+          <div class="win"><img src="img/hoy-fb-post.webp" alt="Captura de la última publicación de Facebook, del 1 de abril, con una reseña de pacientes" width="517" height="547" loading="lazy"></div>
+          <figcaption><b>Facebook · publicaciones</b><span>Última publicación: 1 de abril de 2026</span><small>La anterior es del 2 de diciembre de 2025</small></figcaption>
+        </button>
+      </div>
+
+      <div class="review rv">
+        <div class="rate">
+          <b>4,9</b>
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <div class="meta">167 reseñas en Google Maps</div>
+        </div>
+        <div>
+          <blockquote lang="es">“Excelente experiencia en esta oficina dental. Gabby en recepción fue muy amable y eficiente, Elena hizo una limpieza súper cuidadosa y profesional, y el doctor Javier explicó tod&#111; claramente y con mucha atención. Definitivamente recomiendo este lugar.”</blockquote>
+          <cite>Jessica A., reseña de 5 estrellas en Google</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 PROPUESTA -->
+  <section class="blk dark" id="propuesta">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="num">02</div>
+        <div>
+          <div class="kicker">Propuesta</div>
+          <h2>Así podría verse @westondentaldesign</h2>
+          <p>Su logo en cada pieza, historias destacadas por tema y una grilla coherente en el azul y el verde salvia de su marca, publicada todos los meses.</p>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="notes l">
+          <div class="note rv"><h3>Perfil con su marca</h3><p>Su logo, su especialidad, los dos teléfonos (llamadas y texto) y los botones de contacto, a la vista.</p></div>
+          <div class="note rv" style="--d:.1s"><h3>Historias destacadas</h3><p>Servicios, doctores, reseñas, ubicación y CEREC, ordenados para que el paciente encuentre lo que busca.</p></div>
+          <div class="note rv" style="--d:.2s"><h3>Grilla coherente</h3><p>Cada publicación con la misma paleta y tipografía, reconocible a primera vista.</p></div>
+        </div>
+
+        <div class="phone-col rv" style="--d:.1s">
+          <div class="glow" aria-hidden="true"></div>
+          <button class="phone" id="phone" type="button" data-zoom="img/feed.webp" data-alt="Feed propuesto de Instagram de Weston Dental Design completo" aria-label="Ampliar el feed propuesto">
+            <div class="screen"><img src="img/feed.webp" alt="Feed propuesto de Instagram: perfil con historias destacadas y grilla de seis publicaciones en azul y verde salvia" width="1080" height="2177"></div>
+            <div class="zoom" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+              Tocar para ampliar
+            </div>
+          </button>
+        </div>
+
+        <div class="notes r">
+          <div class="note rv"><h3>Sus dos doctores</h3><p>El Dr. Bonilla y la Dra. Izquierdo presentados con su especialidad, para que el paciente sepa a quién va a conocer.</p></div>
+          <div class="note rv" style="--d:.1s"><h3>Constancia de publicación</h3><p>Un calendario mensual fijo, para que su perfil se mantenga activo los doce meses.</p></div>
+          <div class="note rv" style="--d:.2s"><h3>Español e inglés</h3><p>Publicaciones en los dos idiomas, como atiende el consultorio.</p></div>
+        </div>
+      </div>
+
+      <div class="posts-head rv">
+        <div><div class="kicker">Publicaciones de la propuesta</div><h3>Seis ejemplos, de cerca</h3></div>
+        <p>Deslice para ver más. Toque para ampliar.</p>
+      </div>
+      <div class="rail rv" role="region" aria-label="Publicaciones propuestas" tabindex="0">
+        <button class="post" type="button" data-zoom="img/post1.webp" data-alt="Publicación propuesta 1"><img src="img/post1.webp" alt="Publicación propuesta 1: presentación del Dr. Javier Bonilla y la Dra. Claudia Izquierdo" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post2.webp" data-alt="Publicación propuesta 2"><img src="img/post2.webp" alt="Publicación propuesta 2: carillas y blanqueamiento" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post3.webp" data-alt="Publicación propuesta 3"><img src="img/post3.webp" alt="Publicación propuesta 3: CEREC, una restauración en una sola cita" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post4.webp" data-alt="Publicación propuesta 4"><img src="img/post4.webp" alt="Publicación propuesta 4: reseña de Edna P. con 4,9 en Google" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post5.webp" data-alt="Publicación propuesta 5"><img src="img/post5.webp" alt="Publicación propuesta 5: la entrada del consultorio en Weston" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post6.webp" data-alt="Publicación propuesta 6"><img src="img/post6.webp" alt="Publicación propuesta 6: pida su cita al 954-217-8411" width="900" height="1125" loading="lazy"></button>
+      </div>
+
+      <div class="fbblock rv">
+        <div class="n">237<small>seguidores en Facebook</small></div>
+        <div>
+          <h3>Facebook al día</h3>
+          <p>Las mismas piezas se publican también en su página de Facebook, para que ambas redes se mantengan activas y quien la busque encuentre contenido reciente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 MATERIAL -->
+  <section class="blk" id="material">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="num">03</div>
+        <div>
+          <div class="kicker">Material</div>
+          <h2>Ustedes y su consultorio, tal como son</h2>
+          <p>Estas son las fotos reales que ya tenemos y con las que daríamos rostro y lugar a cada publicación.</p>
+        </div>
+      </div>
+
+      <div class="mat">
+        <button class="ph sq rv" type="button" data-zoom="img/dr-bonilla.webp" data-alt="Dr. Javier E. Bonilla, DDS"><img src="img/dr-bonilla.webp" alt="Ficha del Dr. Javier E. Bonilla, DDS, con su retrato" width="600" height="600" loading="lazy"><figcaption>Dr. Javier Bonilla</figcaption></button>
+        <button class="ph sq rv" style="--d:.08s" type="button" data-zoom="img/dra-izquierdo.webp" data-alt="Dra. Claudia E. Izquierdo, DDS"><img src="img/dra-izquierdo.webp" alt="Ficha de la Dra. Claudia E. Izquierdo, DDS, con su retrato" width="750" height="750" loading="lazy"><figcaption>Dra. Claudia Izquierdo</figcaption></button>
+        <button class="ph span2 rv" style="--d:.12s" type="button" data-zoom="img/puerta.webp" data-alt="Puerta del consultorio"><img src="img/puerta.webp" alt="La puerta del Suite 2, entrada del consultorio" width="1400" height="1050" loading="lazy"><figcaption>Suite 2</figcaption></button>
+        <button class="ph ban span2 rv" type="button" data-zoom="img/fb-portada.webp" data-alt="Portada actual de Facebook"><img src="img/fb-portada.webp" alt="Portada actual de Facebook con el logo, el teléfono y una sonrisa" width="517" height="192" loading="lazy"><figcaption>Portada actual de Facebook</figcaption></button>
+        <button class="ph r43 rv" style="--d:.08s" type="button" data-zoom="img/entrada.webp" data-alt="Acceso al consultorio"><img src="img/entrada.webp" alt="El acceso cubierto al consultorio, con la puerta de vidrio" width="1400" height="1050" loading="lazy"><figcaption>El acceso</figcaption></button>
+        <button class="ph r43 rv" style="--d:.16s" type="button" data-zoom="img/campus.webp" data-alt="Windmill Professional Campus"><img src="img/campus.webp" alt="El letrero de Windmill Professional Campus entre palmeras y plantas" width="1400" height="1050" loading="lazy"><figcaption>Windmill Professional Campus</figcaption></button>
+      </div>
+      <p class="src rv">Fotos de su sitio web, su Facebook y Google Maps. Si tiene fotos propias del consultorio o del equipo, las sumamos.</p>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="close dark">
+    <div class="wrap">
+      <div class="close-card rv">
+        <div class="kicker" style="color:#CFE8DB">El servicio</div>
+        <h2>Gestión mensual de sus redes, <em>para que usted se dedique a sus pacientes</em>.</h2>
+        <p class="lead">Nos ocupamos de su Instagram y su Facebook: creamos el contenido, lo publicamos todos los meses y mantenemos sus perfiles activos, con su estilo.</p>
+        <div class="svc">
+          <div>
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>
+            <b>Instagram y Facebook de Weston Dental Design</b>Sus perfiles, sus historias destacadas y su grilla, con su logo y sus colores.
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.2-2.5z"/></svg>
+            <b>Contenido y Reels</b>Publicaciones diseñadas y videos cortos con las fotos reales de su consultorio.
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+            <b>Todos los meses</b>Perfiles al día, en español e inglés, sin que usted tenga que ocuparse.
+          </div>
+        </div>
+        <div class="sign">
+          <p><b>Santiago Capelli · Ticca Mkt</b>Si le interesa, con gusto coordinamos una llamada breve.</p>
+          <ul class="contact">
+            <li><a href="https://ticca.agency" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg>ticca.agency</a></li>
+            <li><a href="mailto:capellisantiagoemp@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>capellisantiagoemp@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <span>Propuesta preparada para Weston Dental Design Group, 17140 Royal Palm Blvd #2, Weston, FL 33326</span>
+        <span>Tel. <a href="tel:+19542178411">954-217-8411</a></span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<dialog id="lb" aria-label="Imagen ampliada">
+  <button type="button" id="lbx" aria-label="Cerrar">×</button>
+  <div class="box" id="lbbox"><img id="lbimg" alt=""></div>
+</dialog>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rv = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.06,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+    setTimeout(function(){rv.forEach(function(el){el.classList.add('in')})},4000);
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  // contadores (en es-US: 733, 446, 237)
+  var counts = document.querySelectorAll('[data-count]');
+  if(!reduce && 'IntersectionObserver' in window){
+    var co = new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting) return; co.unobserve(e.target);
+      var el=e.target, end=+el.dataset.count, t0=performance.now(), dur=1100;
+      (function tick(t){var p=Math.min(1,(t-t0)/dur);el.textContent=Math.round(end*(1-Math.pow(1-p,4)));if(p<1)requestAnimationFrame(tick)})(t0);
+    })},{threshold:.6});
+    counts.forEach(function(el){co.observe(el)});
+  }
+
+  // nav activa
+  var links = document.querySelectorAll('.steps a');
+  if('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    ['hoy','propuesta','material'].forEach(function(id){so.observe(document.getElementById(id))});
+  }
+
+  // tilt del celular (solo con mouse)
+  var ph = document.getElementById('phone');
+  if(ph && !reduce && matchMedia('(hover:hover) and (pointer:fine)').matches){
+    ph.addEventListener('pointermove',function(e){var r=ph.getBoundingClientRect();var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;ph.style.transform='rotateY('+(x*7)+'deg) rotateX('+(-y*4)+'deg)'});
+    ph.addEventListener('pointerleave',function(){ph.style.transform=''});
+  }
+
+  // lightbox
+  var lb=document.getElementById('lb'),img=document.getElementById('lbimg'),box=document.getElementById('lbbox');
+  function open(src,alt){img.src=src;img.alt=alt||'';box.scrollTop=0;if(lb.showModal)lb.showModal();else lb.setAttribute('open','')}
+  function close(){lb.close?lb.close():lb.removeAttribute('open')}
+  document.querySelectorAll('[data-zoom]').forEach(function(el){
+    el.addEventListener('click',function(){open(el.dataset.zoom,el.dataset.alt)});
+  });
+  document.getElementById('lbx').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===box)close()});
+})();
+</script>
+</body>
+</html>
